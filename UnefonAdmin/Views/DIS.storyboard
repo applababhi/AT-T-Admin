@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DISVC-->
+        <scene sceneID="38T-nv-2Xe">
+            <objects>
+                <viewController storyboardIdentifier="DISVC_ID" id="cvo-dP-hJW" customClass="DISVC" customModule="UnefonAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cJB-mU-4mN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yoe-M5-4mL">
+                                <rect key="frame" x="5" y="5" width="365" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No hay datos para mostrar, intente cambiar los valores del filtro" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mo2-ca-xRx">
+                                <rect key="frame" x="87.5" y="281" width="200" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="XfF-JX-dFW"/>
+                                    <constraint firstAttribute="width" constant="200" id="nec-K3-FYP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yoe-M5-4mL" firstAttribute="bottom" secondItem="cJB-mU-4mN" secondAttribute="bottom" constant="-15" id="06w-Qm-ZKN"/>
+                            <constraint firstItem="Mo2-ca-xRx" firstAttribute="centerY" secondItem="vsN-Fx-MSC" secondAttribute="centerY" id="Ict-ke-1Db"/>
+                            <constraint firstItem="yoe-M5-4mL" firstAttribute="top" secondItem="vsN-Fx-MSC" secondAttribute="top" constant="5" id="IhE-Gn-YNT"/>
+                            <constraint firstItem="vsN-Fx-MSC" firstAttribute="trailing" secondItem="yoe-M5-4mL" secondAttribute="trailing" constant="5" id="R6y-2P-QxK"/>
+                            <constraint firstItem="yoe-M5-4mL" firstAttribute="leading" secondItem="vsN-Fx-MSC" secondAttribute="leading" constant="5" id="b5l-8y-N6q"/>
+                            <constraint firstItem="Mo2-ca-xRx" firstAttribute="centerX" secondItem="vsN-Fx-MSC" secondAttribute="centerX" id="p8C-bN-3op"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vsN-Fx-MSC"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblNoData" destination="Mo2-ca-xRx" id="ZbE-rr-aA3"/>
+                        <outlet property="viewGridContainer" destination="yoe-M5-4mL" id="Ksi-ot-RjK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0qE-BC-FMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-87.200000000000003" y="45.42728635682159"/>
+        </scene>
+    </scenes>
+</document>
